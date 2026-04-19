@@ -42,8 +42,8 @@ class Picture(Area):
     def draw(self): 
         mw.blit(self.image, (self.rect.x, self.rect.y))
 
-ball = Picture('ball.png', 160, 200, 50, 50)
-platform = Picture('platform.png', racket_x, racket_y, 100 , 000)
+ball = Picture('ball.webp', 160, 200, 50, 50)
+platform = Picture('platform.webp', racket_x, racket_y, 100 , 000)
 
 start_x = 5
 start_y = 5
@@ -53,7 +53,7 @@ for j in range(3):
     y = start_y + (55 * j) 
     x = start_x + (27 * j) 
     for i in range(count): 
-        d = Picture('enemy.png', x, y, 50, 50) 
+        d = Picture('enemy.webp', x, y, 50, 50) 
         monsters.append(d) 
         x = x + 55
     count = count - 1
